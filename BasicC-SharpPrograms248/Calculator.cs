@@ -10,8 +10,8 @@ namespace BasicC_SharpPrograms248
     public class Calculator
     {
         // instance variables
-        public int first;
-        public int second;
+        public double first;
+        public double second;
         public double result;
 
         /// <summary>
@@ -47,6 +47,15 @@ namespace BasicC_SharpPrograms248
         {
             result = first * second;
             Console.WriteLine("Products : " + result);
+        }
+
+        /// <summary>
+        /// Division of two numbers 
+        /// </summary>
+        public void Division()
+        {
+            result = first / second;
+            Console.WriteLine("Division result : " + result);
         }
     }
 }
