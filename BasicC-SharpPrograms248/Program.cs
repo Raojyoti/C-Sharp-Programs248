@@ -9,7 +9,7 @@ namespace BasicC_SharpPrograms248
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Enter first number: ");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.Exit ");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch(option)
             {
@@ -46,6 +46,9 @@ namespace BasicC_SharpPrograms248
                     calculator4.Division();
                     break;
                 case 5:
+                    Week.WeekDays();
+                    break;
+                case 6:
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
