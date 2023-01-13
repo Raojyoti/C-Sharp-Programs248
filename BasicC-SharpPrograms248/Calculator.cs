@@ -40,5 +40,13 @@ namespace BasicC_SharpPrograms248
             result = Math.Abs(first - second);
             Console.WriteLine("Difference : " + result);
         }
+        /// <summary>
+        /// Multiplication of two numbers to get products
+        /// </summary>
+        public void Multiplication()
+        {
+            result = first * second;
+            Console.WriteLine("Products : " + result);
+        }
     }
 }

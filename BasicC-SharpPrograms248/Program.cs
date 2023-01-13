@@ -9,7 +9,7 @@ namespace BasicC_SharpPrograms248
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Enter first number: ");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Addition\n2.Substraction\n3.Exit ");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch(option)
             {
@@ -30,6 +30,14 @@ namespace BasicC_SharpPrograms248
                     calculator2.Substraction();
                     break;
                 case 3:
+                    Console.WriteLine("Enter first number: ");
+                    int fithnum = Convert.ToInt16(Console.ReadLine());
+                    Console.WriteLine("Enter second number: ");
+                    int sixthnum = Convert.ToInt16(Console.ReadLine());
+                    Calculator calculator3 = new Calculator(fithnum,sixthnum);
+                    calculator3.Multiplication();
+                    break;
+                    case 4:
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
