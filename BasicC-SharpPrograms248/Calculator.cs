@@ -32,5 +32,13 @@ namespace BasicC_SharpPrograms248
             result = first + second;
             Console.WriteLine("Sum : " + result);
         }
+        /// <summary>
+        /// Substraction of two numbers to get difference
+        /// </summary>
+        public void Substraction()
+        {
+            result = Math.Abs(first - second);
+            Console.WriteLine("Difference : " + result);
+        }
     }
 }

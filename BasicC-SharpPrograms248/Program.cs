@@ -8,11 +8,34 @@ namespace BasicC_SharpPrograms248
         {
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Enter first number: ");
-            int first = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("Enter second number: ");
-            int second = Convert.ToInt16(Console.ReadLine());
-            Calculator calculator1 = new Calculator(first, second);
-            calculator1.Addition();
+            Console.WriteLine("Select given options");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Exit ");
+            int option = Convert.ToInt16(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    Console.WriteLine("Enter first number: ");
+                    int first = Convert.ToInt16(Console.ReadLine());
+                    Console.WriteLine("Enter second number: ");
+                    int second = Convert.ToInt16(Console.ReadLine());
+                    Calculator calculator1 = new Calculator(first, second);
+                    calculator1.Addition();
+                    break;
+                case 2:
+                    Console.WriteLine("Enter first number: ");
+                    int third = Convert.ToInt16(Console.ReadLine());
+                    Console.WriteLine("Enter second number: ");
+                    int fourth = Convert.ToInt16(Console.ReadLine());
+                    Calculator calculator2 = new Calculator(third, fourth);
+                    calculator2.Substraction();
+                    break;
+                case 3:
+                    break;
+                default:
+                    Console.WriteLine("Select valid options only ");
+                    break;
+            }
+            Console.ReadLine();
         }
     }
 }
