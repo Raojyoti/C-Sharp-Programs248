@@ -7,7 +7,6 @@ namespace BasicC_SharpPrograms248
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the basics c-sharp programs");
-            Console.WriteLine("Enter first number: ");
             Console.WriteLine("Select given options");
             Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
@@ -37,12 +36,12 @@ namespace BasicC_SharpPrograms248
                     Calculator calculator3 = new Calculator(fithnum,sixthnum);
                     calculator3.Multiplication();
                     break;
-                    case 4:
+                case 4:
                     Console.WriteLine("Enter first number: ");
                     int number1 = Convert.ToInt16(Console.ReadLine());
                     Console.WriteLine("Enter second number: ");
                     int number2 = Convert.ToInt16(Console.ReadLine());
-                    Calculator calculator4 = new Calculator(number1,number2);
+                    Calculator calculator4 = new Calculator(number1, number2);
                     calculator4.Division();
                     break;
                 case 5:
