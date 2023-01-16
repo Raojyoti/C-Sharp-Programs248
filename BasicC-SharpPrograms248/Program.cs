@@ -8,9 +8,9 @@ namespace BasicC_SharpPrograms248
         {
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Exit ");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Find leap year\n7.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
-            switch(option)
+            switch (option)
             {
                 case 1:
                     Console.WriteLine("Enter first number: ");
@@ -33,7 +33,7 @@ namespace BasicC_SharpPrograms248
                     int fithnum = Convert.ToInt16(Console.ReadLine());
                     Console.WriteLine("Enter second number: ");
                     int sixthnum = Convert.ToInt16(Console.ReadLine());
-                    Calculator calculator3 = new Calculator(fithnum,sixthnum);
+                    Calculator calculator3 = new Calculator(fithnum, sixthnum);
                     calculator3.Multiplication();
                     break;
                 case 4:
@@ -48,6 +48,9 @@ namespace BasicC_SharpPrograms248
                     Week.WeekDays();
                     break;
                 case 6:
+                    LeapYear.FindLeapYear();
+                    break;
+                case 7:
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
