@@ -4,10 +4,16 @@ using System.Text;
 
 namespace BasicC_SharpPrograms248
 {
+    /// <summary>
+    /// Powerof2 class created for find power of two
+    /// </summary>
     public class Powerof2
     {
         public static int number;
         public static int power;
+        /// <summary>
+        /// find power of two
+        /// </summary>
         public static void FindPowerOfTwo()
         {
             Console.WriteLine("Enter number until find power of two :");

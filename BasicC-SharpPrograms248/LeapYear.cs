@@ -4,9 +4,16 @@ using System.Text;
 
 namespace BasicC_SharpPrograms248
 {
+    /// <summary>
+    /// LeapYear class created to check leap year
+    /// </summary>
     public class LeapYear
     {
         static int year;
+
+        /// <summary>
+        /// Check four digits number is leap year or not
+        /// </summary>
         public static void FindLeapYear()
         {
             Console.WriteLine("Enter four digit year:");

@@ -4,8 +4,14 @@ using System.Text;
 
 namespace BasicC_SharpPrograms248
 {
+    /// <summary>
+    /// Week class created for find day
+    /// </summary>
     public class Week
     {
+        /// <summary>
+        /// Using switch case to find day fall in week
+        /// </summary>
         public static void WeekDays()
         {
             Console.WriteLine("Please enter day number: ");

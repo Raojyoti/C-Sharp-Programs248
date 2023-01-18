@@ -8,7 +8,7 @@ namespace BasicC_SharpPrograms248
         {
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Find leap year\n7.FindPowerOfTwo\n8.Exit");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Find leap year\n7.FindPowerOfTwo\n8.SwapTwoNumbers\n9.Exit\n");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -54,6 +54,9 @@ namespace BasicC_SharpPrograms248
                     Powerof2.FindPowerOfTwo();
                     break;
                 case 8:
+                    SwapNumbers.SwapTwoNumbers();
+                    break;
+                case 9:
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
