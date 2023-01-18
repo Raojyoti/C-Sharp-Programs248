@@ -8,7 +8,7 @@ namespace BasicC_SharpPrograms248
         {
             Console.WriteLine("Welcome to the basics c-sharp programs");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Find leap year\n7.FindPowerOfTwo\n8.SwapTwoNumbers\n9.Exit\n");
+            Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division\n5.WeekDays\n6.Find leap year\n7.FindPowerOfTwo\n8.SwapTwoNumbers\n9.CheckAlphabetIsVowelOrConsonant\n10.Exit\n");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -57,6 +57,12 @@ namespace BasicC_SharpPrograms248
                     SwapNumbers.SwapTwoNumbers();
                     break;
                 case 9:
+                    Console.WriteLine("Enter character for checking Vowel or Consonant");
+                    char vowel = Convert.ToChar(Console.ReadLine());
+                    Alphabet alphabet = new Alphabet(vowel);
+                    alphabet.CheckAlphabetIsVowelOrConsonant();
+                    break;
+                case 10:
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
