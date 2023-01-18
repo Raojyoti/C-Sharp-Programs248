@@ -5,7 +5,7 @@ using System.Text;
 namespace BasicC_SharpPrograms248
 {
     /// <summary>
-    /// VotingAge class created to check leap year
+    /// VotingAge class created to check Age for Voting
     /// </summary>
     public class VotingAge
     {
